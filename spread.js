@@ -18,6 +18,8 @@ let product = {
 }
 
 // code here
+let productCopy = {...product};
+console.log(productCopy);
 
 
 
@@ -30,7 +32,7 @@ let colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
 
 // code here
 
-
+let colorsCopy = {...colors};
 
 
 ////////// PROBLEM 3 //////////
@@ -46,6 +48,9 @@ function addNums(num1, num2, num3) {
 // code here
 
 
+let result = (addNums(...numbers));
+
+
 ////////// PROBLEM 4 //////////
 
 /* Using the spread operator, concatentate the two arrays below and save it to a variable named "combinedArrays" */
@@ -54,3 +59,4 @@ let arr1 = ['dog', 'chameleon', 'monkey'];
 let arr2 = ['bear', 'tiger', 'liger'];
 
 // code here
+let combinedArrays = [...arr1,...arr2];

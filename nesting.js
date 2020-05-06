@@ -53,6 +53,23 @@ var employees = [
 //Code Here
 
 
+function employeeUpdater() {
+  employees.forEach(function(emp) {
+    console.log(emp);
+  });
+  var remove = employees.filter(function(employee){
+    console.log(employee.firstName);
+    
+  if(employee.firstName === 'Lorie'){
+       employee.department = 'HR';
+  }
+  return employee.firstName !== 'Theo';
+  console.log(employee);
+  });
+  return remove;
+  }
+  
+  employeeUpdater(employees);
 
 ////////// PROBLEM 2 //////////
 
@@ -70,6 +87,12 @@ var workplaceAccidents = [12, 56, 44, 3, 29, 56, 56, 3, 7, 12];
 
 //Code Here
 
+  function removeDuplicates(arr) {
+    return arr.filter((item,index) => index === arr.indexOf(item))
+      
+    
+  }
+  console.log(removeDuplicates(workplaceAccidents)) 
 
 
 ////////// PROBLEM 3 //////////
@@ -97,8 +120,10 @@ var cat = {
 */
 
 //Code Here
-var grumpyActivity;
-var fluffy2ndFriend;
+var grumpyActivity = cat.catFriends[0].activities[1];
+var fluffy2ndFriend = cat.catFriends[1].name;
+
+grumpyActivity;
 
 
 
@@ -139,9 +164,15 @@ var myCar = {
 */
 
 //Code Here
-
-
-
+function recordCleaner() {
+  for(let i = 0; i < myCar.accidents.length; i++){
+   if(myCar.accidents.atFaultForAccident === true){
+     return myCar.accidents.atFaultForAccident === false;
+   }
+  }
+  
+}
+recordCleaner(myCar);
 ////////// PROBLEM 5 //////////
 
 // Do not edit the code below.
@@ -158,5 +189,7 @@ var numsArr = [ [1, 2, 3, 4], [5, 6], [7, 8, 9, 10, 11]];
 */
 
 //Code Here
-
+function looper(){
+  
+}
 
